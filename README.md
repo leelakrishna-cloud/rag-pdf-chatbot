@@ -13,10 +13,16 @@ This project demonstrates end-to-end document question answering using vector se
 ## Architecture
 This pipeline ensures that the LLM generates responses grounded in retrieved document context.
 
-User Query → Retriever → Context → LLM → Answer
+```mermaid
+flowchart TD
+    A[User Query] --> B[Retriever - ChromaDB]
+    B --> C[Top-K Relevant Chunks]
+    C --> D[Prompt Template]
+    D --> E[LLM - BioMistral (LlamaCpp)]
+    E --> F[Generated Answer]
+```
 
 ## Demo
-
 ![Chatbot Demo](screenshot.png)
 
 ## Tech Stack
