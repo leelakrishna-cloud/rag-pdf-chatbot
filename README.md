@@ -15,7 +15,6 @@ This pipeline ensures that the LLM generates responses grounded in retrieved doc
 
 User Query → Retriever → Context → LLM → Answer
 
-```markdown
 ## Demo
 
 ![Chatbot Demo](screenshot.png)
