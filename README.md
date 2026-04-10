@@ -11,15 +11,18 @@ This project demonstrates end-to-end document question answering using vector se
 - Interactive chatbot UI using Gradio
 
 ## Architecture
+
 This pipeline ensures that the LLM generates responses grounded in retrieved document context.
+
+User Query → Retriever → Context → LLM → Answer
 
 ```mermaid
 flowchart TD
-    A[User Query] --> B[Retriever - ChromaDB]
-    B --> C[Top-K Relevant Chunks]
+    A[User Query] --> B[Retriever (ChromaDB)]
+    B --> C[Top K Chunks]
     C --> D[Prompt Template]
-    D --> E[LLM - BioMistral (LlamaCpp)]
-    E --> F[Generated Answer]
+    D --> E[LLM (BioMistral)]
+    E --> F[Answer]
 ```
 
 ## Demo
