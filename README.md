@@ -17,6 +17,9 @@ This pipeline ensures that the LLM generates responses grounded in retrieved doc
 
 User Query → Retriever → Context → LLM → Answer
 
+## Demo
+
+
 ## Tech Stack
 - LangChain
 - Sentence Transformers
@@ -38,7 +41,6 @@ User Query → Retriever → Context → LLM → Answer
 ```bash
 pip install -r requirements.txt
 
-## Demo
 
 ![Chatbot Demo](screenshot.png)
 
