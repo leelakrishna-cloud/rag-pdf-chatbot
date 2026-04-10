@@ -39,4 +39,10 @@ User Query → Retriever → Context → LLM → Answer
 
 ```bash
 pip install -r requirements.txt
+```
 
+## Run
+
+```bash
+python app.py
+```
