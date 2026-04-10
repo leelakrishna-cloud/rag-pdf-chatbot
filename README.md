@@ -11,12 +11,11 @@ This project demonstrates end-to-end document question answering using vector se
 - Interactive chatbot UI using Gradio
 
 ## Architecture
-
-```markdown
 This pipeline ensures that the LLM generates responses grounded in retrieved document context.
 
 User Query → Retriever → Context → LLM → Answer
 
+```markdown
 ## Demo
 
 ![Chatbot Demo](screenshot.png)
