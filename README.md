@@ -35,13 +35,13 @@ flowchart TD
 - Gradio
 
 ## How It Works
-1. Load PDF documents
-2. Split into chunks
-3. Generate embeddings
-4. Store in vector database
-5. Retrieve relevant chunks
-6. Pass context + query to LLM
-7. Generate concise answer
+1. Load PDF documents  
+2. Split into chunks  
+3. Generate embeddings  
+4. Store in vector database  
+5. Retrieve relevant chunks  
+6. Pass context + query to LLM  
+7. Generate concise, context-aware answer
 
 ## Setup
 
