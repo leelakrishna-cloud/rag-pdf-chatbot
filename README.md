@@ -1,6 +1,6 @@
 # RAG Chatbot (Medical + GenAI)
-
-This project implements a Retrieval-Augmented Generation (RAG) chatbot that answers questions from PDF documents using a local LLM.
+A Retrieval-Augmented Generation (RAG) chatbot using LangChain, ChromaDB, and a local LLM (BioMistral) to answer questions from PDF documents.
+This project demonstrates end-to-end document question answering using vector search and LLM-based generation.
 
 ## Features
 - Multi-document support (Medical + GenAI PDFs)
@@ -11,6 +11,9 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that answ
 - Interactive chatbot UI using Gradio
 
 ## Architecture
+
+```markdown
+This pipeline ensures that the LLM generates responses grounded in retrieved document context.
 
 User Query → Retriever → Context → LLM → Answer
 
@@ -34,4 +37,8 @@ User Query → Retriever → Context → LLM → Answer
 
 ```bash
 pip install -r requirements.txt
-python app.py
+
+## Demo
+
+![Chatbot Demo](screenshot.png)
+
