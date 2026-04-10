@@ -1,23 +1,37 @@
 # RAG Chatbot (Medical + GenAI)
 
-This project is a Retrieval-Augmented Generation (RAG) chatbot built using LangChain, ChromaDB, Sentence Transformers, BioMistral, and Gradio.
+This project implements a Retrieval-Augmented Generation (RAG) chatbot that answers questions from PDF documents using a local LLM.
 
 ## Features
-- Reads multiple PDF documents
-- Splits documents into chunks
-- Creates embeddings for semantic search
-- Stores vectors in ChromaDB
-- Retrieves relevant context for each question
-- Generates concise answers using a local LLM
-- Provides a Gradio chatbot interface
+- Multi-document support (Medical + GenAI PDFs)
+- Semantic search using embeddings
+- Vector database (ChromaDB)
+- Local LLM inference using LlamaCpp (BioMistral GGUF)
+- Hybrid prompt (context + fallback knowledge)
+- Interactive chatbot UI using Gradio
 
-## Project Structure
+## Architecture
 
-```text
-rag-pdf-chatbot/
-├── app.py
-├── requirements.txt
-├── README.md
-└── data/
-    ├── diabetes.pdf
-    └── genai-interview-questions.pdf
+User Query → Retriever → Context → LLM → Answer
+
+## Tech Stack
+- LangChain
+- Sentence Transformers
+- ChromaDB
+- LlamaCpp (GGUF model)
+- Gradio
+
+## How It Works
+1. Load PDF documents
+2. Split into chunks
+3. Generate embeddings
+4. Store in vector database
+5. Retrieve relevant chunks
+6. Pass context + query to LLM
+7. Generate concise answer
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+python app.py
