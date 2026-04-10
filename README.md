@@ -40,6 +40,3 @@ User Query → Retriever → Context → LLM → Answer
 ```bash
 pip install -r requirements.txt
 
-
-![Chatbot Demo](screenshot.png)
-
