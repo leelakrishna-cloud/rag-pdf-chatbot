@@ -33,6 +33,8 @@ flowchart TD
 ## Demo
 ![Chatbot Demo](screenshot.png)
 
+---
+
 ## Tech Stack
 - LangChain
 - Sentence Transformers
