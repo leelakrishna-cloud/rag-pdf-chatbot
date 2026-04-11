@@ -2,6 +2,8 @@
 A Retrieval-Augmented Generation (RAG) chatbot using LangChain, ChromaDB, and a local LLM (BioMistral) to answer questions from PDF documents.
 This project demonstrates end-to-end document question answering using vector search and LLM-based generation.
 
+---
+
 ## Features
 - Multi-document support (Medical + GenAI PDFs)
 - Semantic search using embeddings
@@ -9,6 +11,8 @@ This project demonstrates end-to-end document question answering using vector se
 - Local LLM inference using LlamaCpp (BioMistral GGUF)
 - Hybrid prompt (context + fallback knowledge)
 - Interactive chatbot UI using Gradio
+
+---
 
 ## Architecture
 This pipeline ensures that the LLM generates responses grounded in retrieved document context.
@@ -24,6 +28,8 @@ flowchart TD
     E --> F[Answer]
 ```
 
+---
+
 ## Demo
 ![Chatbot Demo](screenshot.png)
 
@@ -34,6 +40,8 @@ flowchart TD
 - LlamaCpp (GGUF model)
 - Gradio
 
+---
+
 ## How It Works
 1. Load PDF documents  
 2. Split into chunks  
@@ -43,11 +51,15 @@ flowchart TD
 6. Pass context + query to LLM  
 7. Generate concise, context-aware answer
 
+---
+
 ## Setup
 
 ```bash
 pip install -r requirements.txt
 ```
+
+---
 
 ## Run
 
