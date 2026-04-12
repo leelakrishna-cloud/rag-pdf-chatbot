@@ -5,8 +5,6 @@
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-purple)
 ![LlamaCpp](https://img.shields.io/badge/LlamaCpp-LLM-orange)
 ![Gradio](https://img.shields.io/badge/Gradio-UI-red)
-![Embeddings](https://img.shields.io/badge/Embeddings-SentenceTransformers-yellow)
-![Architecture](https://img.shields.io/badge/Architecture-RAG-blueviolet)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 A Retrieval-Augmented Generation (RAG) chatbot using LangChain, ChromaDB, and a local LLM (BioMistral) to answer questions from PDF documents.  
