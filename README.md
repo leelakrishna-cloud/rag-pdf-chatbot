@@ -1,10 +1,21 @@
 # RAG Chatbot (Medical + GenAI)
-A Retrieval-Augmented Generation (RAG) chatbot using LangChain, ChromaDB, and a local LLM (BioMistral) to answer questions from PDF documents.
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-green)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-purple)
+![LlamaCpp](https://img.shields.io/badge/LlamaCpp-LLM-orange)
+![Gradio](https://img.shields.io/badge/Gradio-UI-red)
+![Embeddings](https://img.shields.io/badge/Embeddings-SentenceTransformers-yellow)
+![Architecture](https://img.shields.io/badge/Architecture-RAG-blueviolet)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+A Retrieval-Augmented Generation (RAG) chatbot using LangChain, ChromaDB, and a local LLM (BioMistral) to answer questions from PDF documents.  
 This project demonstrates end-to-end document question answering using vector search and LLM-based generation.
 
 ---
 
 ## Features
+
 - Multi-document support (Medical + GenAI PDFs)
 - Semantic search using embeddings
 - Vector database (ChromaDB)
@@ -15,6 +26,7 @@ This project demonstrates end-to-end document question answering using vector se
 ---
 
 ## Architecture
+
 This pipeline ensures that the LLM generates responses grounded in retrieved document context.
 
 User Query → Retriever → Context → LLM → Answer
@@ -31,11 +43,13 @@ flowchart TD
 ---
 
 ## Demo
+
 ![Chatbot Demo](screenshot.png)
 
 ---
 
 ## Tech Stack
+
 - LangChain
 - Sentence Transformers
 - ChromaDB
@@ -45,6 +59,7 @@ flowchart TD
 ---
 
 ## How It Works
+
 1. Load PDF documents  
 2. Split into chunks  
 3. Generate embeddings  
